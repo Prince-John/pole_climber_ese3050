@@ -14,6 +14,20 @@ Code base for automated pole climbing robot built for ESE3050.
 }
 ```
 
+The directory structure would look something like this:
+```
+pole_climber_ese3050/
+                |
+                |__ micro_ros_raspberrypi_pico_sdk/
+                |                       |__ .vscode/
+                |                       |      |__settings.json
+                |                       |...     
+                |__ pico_sdk/
+                |       |...    
+                |
+                |__ README.md 
+```
+
 Doing this exact way is not necessary you can make the pico sdk a global environment variable as well. 
 
 Depending on your text editor/IDE you will also need to configure the compiler for CMAKE. 
