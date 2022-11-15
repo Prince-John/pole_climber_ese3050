@@ -13,10 +13,14 @@ add_executable(pico_motor_pwm_demo
     pico_motor_pwm_demo.c
     pico_uart_transport.c
 )
+
+add_subdirectory(/Users/kaitlinday/OneDrive\ -\ Washington\ University\ in\ St.\ Louis/ESE\ 3050/pico-arduino-compat/libs/tfli2c build-pac-tfli2c)
+
 target_link_libraries(pico_motor_pwm_demo
     pico_stdlib
     microros
     hardware_pwm
+    pac-tfli2c
 )
 
 target_include_directories(pico_motor_pwm_demo PUBLIC
